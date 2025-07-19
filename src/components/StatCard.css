@@ -1,0 +1,20 @@
+/* src/components/StatCard.css */
+.stat-card {
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #7048e8;
+    color: white;
+}
+
+.stat-card-label {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.stat-card-value {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}

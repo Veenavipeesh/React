@@ -1,0 +1,33 @@
+/* src/components/OrderItem.css */
+
+.order-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr 1fr 1fr; /* 5 columns */
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f3f5;
+    font-size: 14px;
+    align-items: center;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item span {
+    color: #495057;
+}
+
+.order-item span:first-child {
+    color: #868e96;
+}
+
+.status-delivered {
+    color: #2f9e44 !important; /* Green */
+    font-weight: bold;
+}
+
+.status-canceled {
+    color: #e03131 !important; /* Red */
+    font-weight: bold;
+}

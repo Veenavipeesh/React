@@ -1,0 +1,119 @@
+/* src/components/Dashboard.css */
+
+.dashboard {
+    flex-grow: 1; /* This makes it take up the available space */
+    padding: 32px;
+    background-color: #f8f9fa; /* Match the main app background */
+}
+
+/* --- Header Styles --- */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.header-icons span {
+    margin-left: 16px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* --- Stat Cards Section --- */
+.stat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+/* Generic .card class for all white cards */
+.card {
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Info Cards Section Styles --- */
+.info-cards {
+    margin-top: 24px;
+    display: grid;
+    gap: 24px; /* Space between the white cards */
+}
+
+.card.white {
+    background-color: white;
+}
+
+.card.white h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.card.white p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #868e96;
+}
+
+/* --- Marketplace Card Specific Styles --- */
+.marketplace-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start-button {
+    background-color: transparent;
+    border: 2px solid #7048e8;
+    color: #7048e8;
+    padding: 10px 24px;
+    border-radius: 9999px; /* Pill shape */
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* --- Finance Flow Card Specific Styles --- */
+.finance-amount {
+    font-size: 28px;
+    font-weight: 700;
+    color: #212529; /* Darker text for the amount */
+    margin-bottom: 4px !important;
+}
+
+.finance-date {
+    font-size: 14px;
+}
+
+/* --- Recent Orders Card Specific Styles --- */
+.recent-orders-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recent-orders-card .card-header h3 {
+    margin: 0;
+}
+
+.recent-orders-card .card-header a {
+    font-size: 14px;
+    color: #1c7ed6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.orders-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
